@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Shop Dashboard - MediTrack</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h2>💊 MediTrack</h2><nav><a href="index.html">Home</a><a href="#" onclick="logout()">Logout</a></nav></header>
+<main class="page"><h1>Medical Shop Dashboard</h1>
+<div class="grid">
+<section class="form-card"><h2>Add Medicine</h2><form id="medicineForm">
+<label>Medicine name<input id="name" required></label><label>Generic name<input id="genericName"></label><label>Category<input id="category"></label><label>Manufacturer<input id="manufacturer"></label><label>Price (₹)<input id="price" type="number" min="0" step="0.01" required></label><label>Quantity<input id="quantity" type="number" min="0" required></label><label>Expiry date<input id="expiryDate" type="date"></label><button>Add Medicine</button></form></section>
+<section><h2>My Medicines</h2><button onclick="loadMedicines()">Refresh Medicines</button><div id="medicines"></div></section></div>
+<section><h2>Shop Orders</h2><button onclick="loadOrders()">Refresh Orders</button><div id="orders"></div></section>
+</main><script src="shop-dashboard.js"></script></body></html>

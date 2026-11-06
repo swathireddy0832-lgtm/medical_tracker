@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediTrack - User Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>💊 MediTrack</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to MediTrack</h1>
+        <p>Manage your medicines and orders in one place.</p>
+    </section>
+
+    <section class="roles">
+
+        <h2>User Dashboard</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>👤 My Profile</h3>
+                <p>View and update your personal details.</p>
+                <button onclick="showProfile()">View Profile</button>
+                <button onclick="updateProfile()">Update Profile</button>
+            </div>
+
+            <div class="card">
+                <h3>💊 Search Medicines</h3>
+                <p>Find medicines available in medical shops.</p>
+                <button onclick="location.href='search-medicines.html'">
+                    Search Medicines
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🛒 Place Orders</h3>
+                <p>Order medicines from medical shops.</p>
+                <button onclick="location.href='search-medicines.html'">
+                    Order Medicines
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>📦 My Orders</h3>
+                <p>Track your medicine orders.</p>
+                <button onclick="viewOrders()">View Orders</button>
+            </div>
+
+            <div class="card">
+                <h3>⭐ Feedback</h3>
+                <p>Share your experience with medical shops.</p>
+                <button onclick="location.href='feedback.html'">
+                    Give Feedback
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="user-dashboard.js"></script>
+
+</body>
+</html>

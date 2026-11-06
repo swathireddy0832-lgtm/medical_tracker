@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin Dashboard - MediTrack</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h2>💊 MediTrack Admin</h2><nav><a href="index.html">Home</a><a href="#" onclick="logout()">Logout</a></nav></header>
+<main class="page"><h1>Admin Dashboard</h1>
+<section><h2>Medical Shop Approvals</h2><button onclick="loadShops()">Refresh Shops</button><div id="shops"></div></section>
+<section><h2>Medicines</h2><button onclick="loadMedicines()">View Medicines</button><div id="medicines"></div></section>
+<section><h2>Orders</h2><button onclick="loadOrders()">View Orders</button><div id="orders"></div></section>
+<section><h2>Feedback</h2><button onclick="loadFeedback()">View Feedback</button><div id="feedback"></div></section>
+</main><script src="admin-dashboard.js"></script></body></html>

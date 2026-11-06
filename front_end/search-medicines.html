@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Medicines - MediTrack</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h2>💊 MediTrack</h2><nav><a href="user-dashboard.html">Dashboard</a><a href="#" onclick="logout()">Logout</a></nav></header>
+<main class="page">
+<h1>Search Medicines</h1>
+<div class="toolbar"><input id="searchName" placeholder="Enter medicine name"><button onclick="searchMedicines()">Search</button><button class="secondary" onclick="loadMedicines()">Show All</button></div>
+<div id="message"></div><div id="medicineList" class="cards"></div>
+</main>
+<script src="search-medicines.js"></script>
+</body></html>

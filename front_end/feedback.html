@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Feedback - MediTrack</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h2>💊 MediTrack</h2><nav><a href="user-dashboard.html">Dashboard</a><a href="#" onclick="logout()">Logout</a></nav></header>
+<main class="page"><h1>Submit Feedback</h1>
+<form id="feedbackForm" class="form-card">
+<label>Medical Shop ID (optional)<input id="medicalShop" placeholder="Paste shop ID if available"></label>
+<label>Rating<select id="rating" required><option value="">Select rating</option><option value="5">5 - Excellent</option><option value="4">4 - Very good</option><option value="3">3 - Good</option><option value="2">2 - Fair</option><option value="1">1 - Poor</option></select></label>
+<label>Comment<textarea id="comment" required rows="4"></textarea></label><button type="submit">Submit Feedback</button></form>
+<h2>My Feedback</h2><div id="feedbackList"></div></main><script src="feedback.js"></script></body></html>

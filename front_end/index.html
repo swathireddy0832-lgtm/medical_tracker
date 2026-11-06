@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicine Search and Tracking System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>💊 MediTrack</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#roles">Login / Register</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <h1>Medicine Search and Tracking System</h1>
+
+        <p>
+            Find medicines, connect with nearby medical shops
+            and place orders easily.
+        </p>
+
+        <a href="#roles" class="btn">Get Started</a>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Our System</h2>
+
+        <p>
+            MediTrack is a healthcare platform that connects
+            customers with medical shops. Users can search
+            medicines, place orders and provide feedback.
+        </p>
+
+    </section>
+
+    <!-- Role Selection Section -->
+    <section class="roles" id="roles">
+
+        <h2>Choose Your Role</h2>
+
+        <div class="cards">
+
+            <!-- User -->
+            <div class="card">
+
+                <h3>👤 User</h3>
+
+                <p>Search medicines and place orders.</p>
+
+                <button onclick="selectRole('user')">
+                    User Login
+                </button>
+
+                <br><br>
+
+                <button onclick="registerRole('user')">
+                    User Register
+                </button>
+
+            </div>
+
+            <!-- Medical Shop Owner -->
+            <div class="card">
+
+                <h3>🏥 Medical Shop Owner</h3>
+
+                <p>Manage medicines and customer orders.</p>
+
+                <button onclick="selectRole('medicalShop')">
+                    Shop Login
+                </button>
+
+                <br><br>
+
+                <button onclick="registerRole('medicalShop')">
+                    Shop Register
+                </button>
+
+            </div>
+
+            <!-- Admin -->
+            <div class="card">
+
+                <h3>⚙️ Admin</h3>
+
+                <p>Manage shops and monitor activities.</p>
+
+                <button onclick="selectRole('admin')">
+                    Admin Login
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MediTrack | Medicine Search and Tracking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
